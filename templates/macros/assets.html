@@ -14,7 +14,7 @@
 
 {% macro card(post) %}
 <div id="{{ post.title | slugify }}">
-    <a class="asset-card" href="{{ post.extra.link }}">
+    <a class="asset-card" href="{{ post.extra.link }}/">
         <div class="asset-card__banner">
             <div class="asset-card__title">{{post.title}}</div>
             {% if post.extra.image %}
